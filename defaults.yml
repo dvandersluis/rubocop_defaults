@@ -10,6 +10,9 @@ Layout/CaseIndentation:
   EnforcedStyle: end
   IndentOneStep: true
 
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
 
