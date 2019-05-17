@@ -31,6 +31,10 @@ Layout/SpaceInsideBlockBraces:
   EnforcedStyleForEmptyBraces: no_space
   SpaceBeforeBlockParameters: true
 
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+  - spec/**/*
+
 Metrics/BlockLength:
   Exclude:
   - spec/**/*
@@ -80,6 +84,38 @@ Style/FrozenStringLiteralComment:
 Style/HashSyntax:
   Exclude:
   - 'Rakefile'
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  IgnoreMacros: true
+  IgnoredMethods:
+  - describe
+  - exit
+  - extend
+  - include
+  - load
+  - print
+  - puts
+  - raise
+  - raise_error
+  - require
+  - require_relative
+  - shared_examples
+  - sleep
+  - system
+  - throw
+  - to
+  - to_not
+  - yield
+  Exclude:
+  - /**/*.rake
+  - /**/*.gemspec
+  - config.ru
+  - config/routes.rb
+  - db/**/*.rb
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
