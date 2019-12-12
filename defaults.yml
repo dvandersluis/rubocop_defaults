@@ -16,6 +16,9 @@ Layout/DotPosition:
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
 
+Layout/LineLength:
+  Max: 150
+
 Layout/SpaceBeforeBlockBraces:
   EnforcedStyle: space
   EnforcedStyleForEmptyBraces: space
@@ -38,9 +41,6 @@ Lint/AmbiguousBlockAssociation:
 Metrics/BlockLength:
   Exclude:
   - spec/**/*
-
-Metrics/LineLength:
-  Max: 150
 
 RSpec/ContextWording:
   Enabled: false
