@@ -125,5 +125,8 @@ Style/PercentLiteralDelimiters:
     '%w': '()'
     '%W': '()'
 
+Style/SafeNavigation:
+  Enabled: false
+
 Style/StabbyLambdaParentheses:
   EnforcedStyle: require_parentheses
