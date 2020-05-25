@@ -30,5 +30,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'bundler'
   spec.add_dependency 'rubocop'
+  spec.add_dependency 'rubocop-performance'
   spec.add_dependency 'rubocop-rspec'
 end
