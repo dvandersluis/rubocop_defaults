@@ -1,7 +1,20 @@
-require: rubocop-rspec
+require:
+  - rubocop-rspec
+  - rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 3.0
+  NewCops: enable
+  Exclude:
+    - bin/*
+    - db/schema.rb
+    - data/**/*
+    - node_modules/**/*
+    - log/**/*
+    - public/**/*
+    - tmp/**/*
+    - vendor/cache/**/*
+    - vendor/bundle/**/*
 
 Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
@@ -15,6 +28,9 @@ Layout/DotPosition:
 
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
+
+Layout/LineLength:
+  Max: 150
 
 Layout/SpaceBeforeBlockBraces:
   EnforcedStyle: space
@@ -38,9 +54,6 @@ Lint/AmbiguousBlockAssociation:
 Metrics/BlockLength:
   Exclude:
   - spec/**/*
-
-Metrics/LineLength:
-  Max: 150
 
 RSpec/ContextWording:
   Enabled: false
