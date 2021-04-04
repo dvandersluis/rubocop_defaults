@@ -52,8 +52,23 @@ Lint/AmbiguousBlockAssociation:
   - spec/**/*
 
 Metrics/BlockLength:
+  CountAsOne: ['array', 'hash']
+  IgnoredMethods:
+    - class_methods
+    - instance_methods
   Exclude:
-  - spec/**/*
+    - spec/**/*
+
+Metrics/ClassLength:
+  CountAsOne: ['array', 'hash']
+
+Metrics/MethodLength:
+  CountAsOne: ['array', 'hash']
+  Exclude:
+    - db/migrate/**/*
+
+Metrics/ModuleLength:
+  CountAsOne: ['array', 'hash']
 
 RSpec/ContextWording:
   Enabled: false
